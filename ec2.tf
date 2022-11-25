@@ -9,7 +9,7 @@ resource "aws_instance" "web-Server" {
   }
   metadata_options {
     http_endpoint = "disabled"
-    http_tokens   = "required"
+    http_tokens   = "optional"
   }
   tags = {
     Name = "airbnb-web-server"
