@@ -8,7 +8,7 @@ resource "aws_instance" "web-Server" {
     encrypted = true
   }
   metadata_options {
-    http_endpoint = "enabled"
+    http_endpoint = "disabled"
     http_tokens   = "required"
   }
   tags = {
